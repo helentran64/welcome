@@ -8,6 +8,7 @@ html{
     scroll-behavior:smooth;
 }
 
+
 .bg-img {
     background-image: url("../Images/logo2.png");
     min-height:40px;
@@ -27,6 +28,7 @@ html{
     text-decoration: none;
     font-size: 16px;
     background-color: white;
+    z-index: 100;
 }
 
 .topnav a:hover {
@@ -39,12 +41,12 @@ html{
 }
 
 .navbar {
-    overflow: hidden;
     background-color: white;
     position: fixed; 
     top: 0; 
     width: 100%; 
     box-shadow: 0 0 8px 0 rgb(0, 195, 255);
+    z-index: 10000;
 }
 
 
