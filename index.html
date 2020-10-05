@@ -16,6 +16,7 @@
                         <div class="topnav">
                             <a href="#contact">Contact</a>
                             <a href="#portfolio-1">Portfolio</a>
+                            <a href="#ex">Experiences</a>
                             <a href="#about-me">About</a>
                         </div>
                     </div>
@@ -58,12 +59,101 @@
                         <a href="https://www.linkedin.com/in/h10tran/" class="fa fa-linkedin"></a>
                         <a href="https://github.com/helentran64/" class="fa fa-github"></a>
                     </section>
+                    <br id="ex">
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </section>
         </section>
 
-    
+            
+        <section>
+            <h1 class="workex">Work and Volunteer Experience</h1>
+            <br> 
+            <div class="process-wrapper">
+            <div id="progress-bar-container">
+                <ul>
+                    <li class="step step01 active"><div class="step-inner">UHN</div></li>
+                    <li class="step step02"><div class="step-inner">University of Toronto</div></li>
+                    <li class="step step03"><div class="step-inner">Obesity Canada</div></li>
+                    <li class="step step04"><div class="step-inner">Ryerson University</div></li>
+                    <li class="step step05"><div class="step-inner">Web Developer</div></li>
+                </ul>
+                
+                <div id="line">
+                    <div id="line-progress"></div>
+                </div>
+            </div>
 
+            <div id="progress-content-section">
+                <div class="section-content discovery active">
+                    <h2>Toronto Western Hospital, University Health Network</h2>
+                    <p>Sept '16 - Jun '17</p>
+                    <p>Cardiac Therapy Administrator</p>
+                </div>
+                
+                <div class="section-content strategy">
+                    <h2>University of Toronto Faculty Club</h2>
+                    <p>Sep '17 - Jan '20</p>
+                    <p>Sales and Inventory Associate and Casual Server</p>
+                </div>
+                
+                <div class="section-content creative">
+                    <h2>Obesity Canada</h2>
+                    <p>Jun '20 - Oct '20</p>
+                    <p>Communication Coordinator Executive </p>
+                </div>
+                
+                <div class="section-content production">
+                    <h2>Ryerson University</h2>
+                    <p>May '19 - Aug '20</p>
+                    <p>Laboratory Student Assistant</p>
+                </div>
+                
+                <div class="section-content analysis">
+                    <h2>Freelance Web Developer</h2>
+                    <p>July '20 - Present</p>
+                    <p>Building web interfaces from scratch</p>
+
+                </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+            <script>
+                
+                $(".step").click( function() {
+                $(this).addClass("active").prevAll().addClass("active");
+                $(this).nextAll().removeClass("active");
+            });
+
+            $(".step01").click( function() {
+                $("#line-progress").css("width", "3%");
+                $(".discovery").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step02").click( function() {
+                $("#line-progress").css("width", "25%");
+                $(".strategy").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step03").click( function() {
+                $("#line-progress").css("width", "50%");
+                $(".creative").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step04").click( function() {
+                $("#line-progress").css("width", "75%");
+                $(".production").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step05").click( function() {
+                $("#line-progress").css("width", "100%");
+                $(".analysis").addClass("active").siblings().removeClass("active");
+            });
+                </script>
+        </section>
 
         <br id="portfolio-1">
         <section class="portfolio">
